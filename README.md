@@ -1,7 +1,7 @@
 # Smart Campus - Sensor & Room Management API
 
 **Module:** 5COSC022W Client-Server Architectures (2025/26)  
-**Student:**  Chenuli Kodikara-w21531
+**Student:**  Chenuli Kodikara-w2153120
 
 A RESTful API supporting the university "Smart Campus" programme, developed with **JAX-RS (Jersey)** and deployed as a **WAR** on Apache Tomcat. The service manages **rooms**, **sensors** installed within them, and a **time-series log of sensor readings**. All data resides **in memory** no external database is used.
 
@@ -9,29 +9,29 @@ A RESTful API supporting the university "Smart Campus" programme, developed with
 
 ## How to build and run
 
-# 1. Requirements
+### 1. Requirements
 Java JDK 8 or higher
 Apache Tomcat 9 (e.g., 9.0.100)
 NetBeans IDE
 
-# 2. Download Project
+### 2. Download Project
 git clone https://github.com/chenuliM/smart-campus-api
 
-# 3. Configure Tomcat in NetBeans
+### 3. Configure Tomcat in NetBeans
 Open NetBeans
 Go to Services → Servers
 Right-click → Add Server
 Select Apache Tomcat
 Choose your Tomcat installation folder
 
-# 4. Open Project
+### 4. Open Project
 Go to File → Open Project
 Select the project folder
 
-# 5. Run the Project
+### 5. Run the Project
 Right-click the project → Run
 
-# 6. Access API
+### 6. Access API
 Open in browser or Postman:
 
 http://localhost:8080/api/v1
@@ -101,7 +101,7 @@ curl -i "http://localhost:8080/api/v1/sensors/TEMP-101/readings"
 
 ---
 
-## Written Report (Answers to the Brief)
+## Report
 
 ### Part 1: Service Architecture & Setup
 
