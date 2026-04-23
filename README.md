@@ -1,7 +1,7 @@
 # Smart Campus — Sensor & Room Management API
 
 **Module:** 5COSC022W Client-Server Architectures (2025/26)  
-**Student:**  
+**Student:**  Chenuli Kodikara-w2153120
 **GitHub:** [Repository Link](https://github.com/)
 
 A RESTful API supporting the university "Smart Campus" programme, developed with **JAX-RS (Jersey)** and deployed as a **WAR** on Apache Tomcat. The service manages **rooms**, **sensors** installed within them, and a **time-series log of sensor readings**. All data resides **in memory** — no external database is used.
@@ -10,7 +10,8 @@ A RESTful API supporting the university "Smart Campus" programme, developed with
 
 ## How to build and run
 
-**Prerequisites:** JDK 8+, Maven 3.x, Apache Tomcat (or any servlet container).
+**Prerequisites:** 
+JDK 8+, Maven 3.x, Apache Tomcat (or any servlet container).
 
 1. Build the WAR:
 
