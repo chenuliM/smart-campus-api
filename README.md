@@ -1,42 +1,53 @@
-# Smart Campus — Sensor & Room Management API
+# Smart Campus - Sensor & Room Management API
 
 **Module:** 5COSC022W Client-Server Architectures (2025/26)  
-**Student:**  
-**GitHub:** [Repository Link](https://github.com/)
+**Student:**  Chenuli Kodikara-w21531
 
-A RESTful API supporting the university "Smart Campus" programme, developed with **JAX-RS (Jersey)** and deployed as a **WAR** on Apache Tomcat. The service manages **rooms**, **sensors** installed within them, and a **time-series log of sensor readings**. All data resides **in memory** — no external database is used.
+A RESTful API supporting the university "Smart Campus" programme, developed with **JAX-RS (Jersey)** and deployed as a **WAR** on Apache Tomcat. The service manages **rooms**, **sensors** installed within them, and a **time-series log of sensor readings**. All data resides **in memory** no external database is used.
 
 ---
 
 ## How to build and run
 
-**Prerequisites:** JDK 8+, Maven 3.x, Apache Tomcat (or any servlet container).
+# 1. Requirements
+Java JDK 8 or higher
+Apache Tomcat 9 (e.g., 9.0.100)
+NetBeans IDE
 
-1. Build the WAR:
+# 2. Download Project
+git clone https://github.com/chenuliM/smart-campus-api
 
-   ```bash
-   mvn clean package
-   ```
+# 3. Configure Tomcat in NetBeans
+Open NetBeans
+Go to Services → Servers
+Right-click → Add Server
+Select Apache Tomcat
+Choose your Tomcat installation folder
 
-2. Copy `target/smart-campus-api-1.0-SNAPSHOT.war` into Tomcat's `webapps/` folder.
+# 4. Open Project
+Go to File → Open Project
+Select the project folder
 
-3. Start Tomcat. The API is available at:
+# 5. Run the Project
+Right-click the project → Run
 
-   ```
-   http://localhost:8080/api/v1
-   ```
+# 6. Access API
+Open in browser or Postman:
+
+http://localhost:8080/api/v1
+
 
 The entry point is declared with `@ApplicationPath("/api/v1")` on the `SmartCampusApplication` class, which extends `javax.ws.rs.core.Application`.
 
 ---
 
-## API design overview
+## API Overview
 
 The API reflects the physical campus layout: **rooms** serve as the top-level resource, **sensors** are installed within rooms, and each sensor accumulates **readings** over time. A discovery endpoint at the API root exposes metadata and navigational links so that clients always have a well-defined starting point.
 
 ---
 
-### Endpoint summary
+### Endpoints
 
 | Method      | Path                                  | Description                                              |
 | ----------- | ------------------------------------- | -------------------------------------------------------- |
